@@ -1,0 +1,501 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif\r\n"
+    "#include ""res\\MapClient.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_CHAT97              ICON    DISCARDABLE     "res\\chat97.ico"
+IDR_DEADCHAT97          ICON    DISCARDABLE     "res\\icon3.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "CompanyName", "王様工房\0"
+            VALUE "FileDescription", "CHAT97\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CHAT97\0"
+            VALUE "LegalCopyright", "Copyright (C) 1997\0"
+            VALUE "OriginalFilename", "CHAT97.EXE\0"
+            VALUE "ProductName", "CHAT97\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONNECT DIALOG DISCARDABLE  0, 0, 187, 131
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ハンドル入力"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_HANDLE,57,7,123,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROFILE,57,23,123,30,ES_MULTILINE
+    EDITTEXT        IDC_HOMEPAGE,57,55,123,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAIL,57,71,123,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SERVERLIST,57,89,76,183,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,7,110,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,110,50,14
+    PUSHBUTTON      "サーバ編集",IDC_EDITSERVER,134,89,46,14
+    LTEXT           "ハンドル",IDC_STATIC,7,7,45,8,NOT WS_GROUP
+    LTEXT           "プロフィール",IDC_STATIC,7,28,41,8
+    LTEXT           "メールアドレス",IDC_STATIC,7,73,42,8
+    LTEXT           "ホームページ",IDC_STATIC,7,56,40,8
+    LTEXT           "サーバ",IDC_STATIC,7,89,47,14
+END
+
+IDD_SENDMESSAGE DIALOG DISCARDABLE  0, 0, 187, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "電報の送信"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_SENDMESSAGE,14,45,160,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "送信",IDOK,7,72,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,72,50,14
+    LTEXT           "送る電報の内容",IDC_STATIC,60,27,85,8
+    GROUPBOX        "さんに電報を送ります",IDC_SENDTITLE,7,7,173,60
+END
+
+IDD_ROOMNAME DIALOG DISCARDABLE  0, 0, 187, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "部屋に名前を付ける"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_ROOMNAME,14,45,160,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "付ける",IDOK,7,72,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,72,50,14
+    LTEXT           "部屋の名前",IDC_STATIC,60,27,90,8
+    GROUPBOX        "号室に名前を付けます",IDC_SENDTITLE,7,7,173,60
+END
+
+IDD_HELP DIALOG DISCARDABLE  0, 0, 187, 205
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    ICON            IDR_CHAT97,IDC_STATIC,7,7,20,20
+    LTEXT           "チャット９７",IDC_STATIC,35,15,40,8
+    LTEXT           "Developed by 王様工房",IDC_STATIC,78,15,78,8
+    LTEXT           "１９９７/11/13版(サーバリスト)",IDC_VERSION,7,190,118,8
+    LTEXT           "障害、要望はsakai@oosama.comにどうぞ！",IDC_STATIC,7,59,
+                    152,8
+    LTEXT           "新Ｖｅｒや開発状況は",IDC_STATIC,5,37,72,11
+    LTEXT           "PROGRAM\t☆酒井\nICON\t\t下山\nヘルプ\t\tおみゆ\nマニュアル\tけいすけ\nGoods\t\tゆーすけ\r\n && thanks to\t廃人の皆さん",
+                    IDC_STATIC,7,104,139,77,SS_SUNKEN
+    LTEXT           "最新の入室状況は,\r\nhttp://www.oosama.net/chat97status.html\r\nで、見る事が出来ます。",
+                    IDC_STATIC,7,71,173,27
+    LTEXT           "にあります",IDC_STATIC,7,47,60,8
+    PUSHBUTTON      "http://www.oosama.com/chat",IDC_SEECHAT97HP,73,37,107,
+                    14
+END
+
+IDD_SETHANDLE DIALOG DISCARDABLE  0, 0, 187, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "プロフィールの変更"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_HANDLE,57,7,123,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROFILE,57,23,123,30,ES_MULTILINE
+    EDITTEXT        IDC_HOMEPAGE,57,55,123,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAIL,57,71,123,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,92,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,92,50,14,NOT WS_TABSTOP
+    LTEXT           "ハンドル",IDC_STATIC,7,7,45,8,NOT WS_GROUP
+    LTEXT           "プロフィール",IDC_STATIC,7,28,41,8
+    LTEXT           "メールアドレス",IDC_STATIC,7,73,42,8
+    LTEXT           "ホームページ",IDC_STATIC,7,56,40,8
+END
+
+IDD_BOSSSTRING DIALOG DISCARDABLE  0, 0, 187, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ボス来た文字列"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,72,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,72,50,14
+    GROUPBOX        "ボス来た文字列を設定します",IDC_STATIC,7,7,173,61
+    EDITTEXT        IDC_BOSSSTRING,7,33,173,14,ES_AUTOHSCROLL
+END
+
+IDD_EDITSERVER DIALOG DISCARDABLE  0, 0, 187, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "サーバリストの選択"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,74,114,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,114,50,14
+    LISTBOX         IDC_SVLIST,3,5,138,101,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "新規",IDC_SVADD,147,7,33,14
+    PUSHBUTTON      "↑へ",IDC_SVUP,147,27,33,14
+    PUSHBUTTON      "↓へ",IDC_SVDOWN,147,47,33,14
+    PUSHBUTTON      "変更",IDC_EDITCHANGE,147,68,33,14
+    PUSHBUTTON      "削除",IDC_SVDEL,147,89,33,14
+    PUSHBUTTON      "ｻｰﾊﾞからﾘｽﾄ取得",IDC_GETCGI,7,114,61,14
+END
+
+IDD_ADDSERVER DIALOG DISCARDABLE  0, 0, 187, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "サーバの追加"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_SVNAME,78,7,103,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SVADDRESS,78,29,103,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SVPORT,78,51,102,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,72,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,72,50,14
+    LTEXT           "サーバの名前",IDC_STATIC,7,9,42,8,NOT WS_GROUP
+    LTEXT           "サーバのアドレス",IDC_STATIC,7,30,51,8,NOT WS_GROUP
+    LTEXT           "サーバのポート",IDC_STATIC,7,52,46,8,NOT WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CONNECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_SENDMESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_ROOMNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_SETHANDLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_BOSSSTRING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_EDITSERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_ADDSERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CHAT97 MENU DISCARDABLE 
+BEGIN
+    POPUP "ﾌｧｲﾙ(&F)"
+    BEGIN
+        MENUITEM "保存(&S)\tCtrl+S",            IDM_SAVE
+        MENUITEM "ログのクリア\tCtrl+Q",        IDM_LOGCLEAR
+    END
+    POPUP "接続(&C)"
+    BEGIN
+        MENUITEM "サーバ情報",                  IDM_SERVERSTATUS
+        MENUITEM "接続",                        IDM_CONNECT
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "切断",                        IDM_DISCONNECT
+    END
+    POPUP "設定(&S)"
+    BEGIN
+        MENUITEM "フォントの選択",              IDM_FONT
+        MENUITEM "チャット背景色",              IDM_CHATBACK_COLOR_
+        MENUITEM "チャットハンドル色",          IDM_CHATHANDLECOLOR
+        MENUITEM "チャット文字色",              IDM_CHATCHARCOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "接続音の設定(chat97.wav)",    IDM_ENTERSOUND
+        MENUITEM "切断音の設定(_chat97.wav)",   IDM_EXITSOUND
+        MENUITEM "入室音の設定",                IDM_ENTERROOMSOUND
+        MENUITEM "退室音の設定",                IDM_EXITROOMSOUND
+        MENUITEM "落ちた時の音の設定",          IDM_DISCONNECTSOUND
+        MENUITEM "電報が来た時の音の設定",      IDM_TELEGRAMSOUND
+        MENUITEM SEPARATOR
+        MENUITEM "ESCボス来た機能",             IDM_ISBOSS, CHECKED
+        MENUITEM "ボス来た文字列の設定",        IDM_BOSSSTRING
+        MENUITEM "ツールバー(起動時のみ)",      IDM_ISTOOLBAR, CHECKED
+        MENUITEM "部屋移動時にログをクリアする", IDM_ISLOGCLEAR, CHECKED
+        MENUITEM "時刻表示",                    IDM_TIMEDISP
+    END
+    POPUP "ユーザ(&U)"
+    BEGIN
+        MENUITEM "電報を送る(&F)\tCtrl+F",      IDM_SENDMESSAGE
+        MENUITEM "プロフィールの変更(&R)\tCtrl+R", IDM_SETHANDLE
+        MENUITEM "部屋の名前を決める(&N)\tCtrl+N", IDM_ROOMNAME
+        MENUITEM SEPARATOR
+        MENUITEM "次の部屋のメンバを見る\tTAB", ID_NEXTROOM
+        MENUITEM "前の部屋を見る\tShift+Tab",   IDM_BACKROOM
+        MENUITEM "上のメンバをセレクト\t↑",    IDM_MEMBERUP
+        MENUITEM "下のメンバをセレクト\t↓",    IDM_MEMBERDOWN
+        MENUITEM "右の部屋に移動(&E)\tCtrl+E",  IDM_SAMEROOM
+        MENUITEM "履歴戻る\tCtrl+↑",           IDM_PREVHISTORY
+        MENUITEM "履歴進む\tCtrl+↓",           IDM_NEXTHISTORY
+        MENUITEM "ハンドル引用\tCtrl+Enter",    IDM_RIGHTHANDLE
+    END
+    POPUP "文字の色"
+    BEGIN
+        MENUITEM "青(1)\tCtrl+1",               IDM_COLOR1
+        MENUITEM "緑(2)\tCtrl+2",               IDM_COLOR2
+        MENUITEM "水(3)\tCtrl+3",               IDM_COLOR3
+        MENUITEM "赤(4)\tCtrl+4",               IDM_COLOR4
+        MENUITEM "紫(5)\tCtrl+5",               IDM_COLOR5
+        MENUITEM "黄(6)\tCtrl+6",               IDM_COLOR6
+        MENUITEM "ピ(7)\tCtrl+7",               IDM_COLOR7
+        MENUITEM "橙(8)\tCtrl+8",               IDM_COLOR8
+        MENUITEM "王(9)\tCtrl+9",               IDM_COLOR9
+        MENUITEM "白(0)\tCtrl+0",               IDM_COLOR0
+    END
+    MENUITEM "ヘルプ(F1)",                  ID_HELP, HELP
+    MENUITEM "Version情報",                 IDM_HELP, HELP
+END
+
+IDR_RMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "右クリック"
+    BEGIN
+        MENUITEM "電報を送る(&F)\tCtrl+F",      IDM_SENDMESSAGE
+        MENUITEM "メールを出す\tCtrl+M",        IDM_MAILCOPY
+        MENUITEM "ホームページを見る\tCtrl+H",  IDM_SEEHOMEPAGE
+        MENUITEM "IPアドレスの表示\tCtrl+I",    IDM_GETIP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_CHAT97 ACCELERATORS DISCARDABLE 
+BEGIN
+    "0",            IDM_COLOR0,             VIRTKEY, CONTROL, NOINVERT
+    "1",            IDM_COLOR1,             VIRTKEY, CONTROL, NOINVERT
+    "2",            IDM_COLOR2,             VIRTKEY, CONTROL, NOINVERT
+    "3",            IDM_COLOR3,             VIRTKEY, CONTROL, NOINVERT
+    "4",            IDM_COLOR4,             VIRTKEY, CONTROL, NOINVERT
+    "5",            IDM_COLOR5,             VIRTKEY, CONTROL, NOINVERT
+    "6",            IDM_COLOR6,             VIRTKEY, CONTROL, NOINVERT
+    "7",            IDM_COLOR7,             VIRTKEY, CONTROL, NOINVERT
+    "8",            IDM_COLOR8,             VIRTKEY, CONTROL, NOINVERT
+    "9",            IDM_COLOR9,             VIRTKEY, CONTROL, NOINVERT
+    "E",            IDM_SAMEROOM,           VIRTKEY, CONTROL, NOINVERT
+    "F",            IDM_SENDMESSAGE,        VIRTKEY, CONTROL, NOINVERT
+    "H",            IDM_SEEHOMEPAGE,        VIRTKEY, CONTROL, NOINVERT
+    "I",            IDM_GETIP,              VIRTKEY, CONTROL, NOINVERT
+    "K",            IDM_KILL,               VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "M",            IDM_MAILCOPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_ROOMNAME,           VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_omae,               VIRTKEY, CONTROL, NOINVERT
+    "P",            IDM_PROFCOPY,           VIRTKEY, CONTROL, NOINVERT
+    "Q",            IDM_LOGCLEAR,           VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_SETHANDLE,          VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_SAVE,               VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        IDM_MEMBERDOWN,         VIRTKEY, NOINVERT
+    VK_DOWN,        IDM_NEXTHISTORY,        VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      IDM_BOSS,               VIRTKEY, NOINVERT
+    VK_RETURN,      IDM_RIGHTHANDLE,        VIRTKEY, CONTROL, NOINVERT
+    VK_TAB,         IDM_NEXTROOM,           VIRTKEY, NOINVERT
+    VK_TAB,         IDM_BACKROOM,           VIRTKEY, SHIFT, NOINVERT
+    VK_UP,          IDM_MEMBERUP,           VIRTKEY, NOINVERT
+    VK_UP,          IDM_PREVHISTORY,        VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_LOGINSOUND          WAVE    DISCARDABLE     "res\\login.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_LINKHAND            CURSOR  DISCARDABLE     "RES\\linkhand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows ｿｹｯﾄの初期化に失敗しました。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_MESCHARCOLOR        "チャットのメッセージの色を変更します"
+    IDS_ROOM1               "このボタンを押すと１号室（入り口）に移動します。部屋の名前は変更できません"
+    IDS_ROOMOTHER           "部屋に移動します。右ボタンを押すと最初に入った人のみ部屋の名前を変更出来ます。"
+    IDM_SAVE                "sdafadfsfsda"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif
+#include "res\MapClient.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
